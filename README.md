@@ -131,3 +131,7 @@ simplicity of plain file-based HLS. If you later need sub-second latency
 (this setup is closer to 1-3s, gated by the camera's own keyframe interval),
 swap the backend's ffmpeg/MSE pipeline for WebRTC (e.g. `pion/webrtc`)
 without touching the frontend's camera-list contract.
+
+## License
+
+[MIT](LICENSE)

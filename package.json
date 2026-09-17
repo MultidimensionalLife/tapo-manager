@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "description": "Tapo camera manager: Go backend bridging RTSP camera streams to a React frontend",
+  "license": "MIT",
   "scripts": {
     "dev:frontend": "pnpm --filter tapo-manager-frontend dev",
     "build:frontend": "pnpm --filter tapo-manager-frontend build",
