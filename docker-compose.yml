@@ -1,0 +1,27 @@
+services:
+  backend:
+    build:
+      context: ./apps/backend
+    ports:
+      - "8081:8080"
+    environment:
+      ADDR: ":8080"
+      DATA_DIR: "/app/data"
+      CAMERAS_CONFIG: "/app/cameras.json"
+    volumes:
+      - ./apps/backend/cameras.json:/app/cameras.json:ro
+      - camera-data:/app/data
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: apps/frontend/Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  camera-data:

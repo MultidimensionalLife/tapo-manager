@@ -1,0 +1,5 @@
+packages:
+  - "apps/*"
+
+overrides:
+  rolldown: "1.2.8"

@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.log
+
+# Go
+apps/backend/bin/
+apps/backend/data/hls/*
+!apps/backend/data/hls/.gitkeep
+apps/backend/cameras.json

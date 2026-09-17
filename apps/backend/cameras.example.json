@@ -1,0 +1,14 @@
+{
+  "cameras": [
+    {
+      "id": "front-door",
+      "name": "Front Door",
+      "rtspUrl": "rtsp://camUser:camPass@192.168.1.50:554/stream1"
+    },
+    {
+      "id": "backyard",
+      "name": "Backyard",
+      "rtspUrl": "rtsp://camUser:camPass@192.168.1.51:554/stream1"
+    }
+  ]
+}

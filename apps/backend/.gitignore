@@ -1,0 +1,4 @@
+/bin/
+/data/hls/*
+!/data/hls/.gitkeep
+cameras.json
